@@ -1,0 +1,39 @@
+# Environment and local secrets
+.env
+.env.*
+!.env.example
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+
+# Private source documents
+bols/*
+!bols/.gitkeep
+*.pdf
+*.tif
+*.tiff
+*.png
+*.jpg
+*.jpeg
+
+# Generated extraction output and review data
+all_extractions*.json
+last_extraction.json
+ground_truth.json
+*_summary*.xlsx
+*.xlsx
+*.csv
+outputs/
+data/
+private/
+
+# Local/debug files
+*_debug.py
+test_debug.py
+run.log
+*.log
+.claude/
+.DS_Store
